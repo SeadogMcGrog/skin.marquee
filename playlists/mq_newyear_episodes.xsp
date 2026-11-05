@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>New Year's Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>New Year</value><value>Countdown</value><value>Midnight</value><value>Resolution</value></rule>
+    <rule field="plot" operator="contains"><value>New Year's Eve</value><value>New Year's</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Easter Movies</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>easter</value><value>Easter</value></rule>
+    <rule field="title" operator="contains"><value>Easter</value><value>Bunny</value><value>Peter Rabbit</value><value>Peter Cottontail</value></rule>
+    <rule field="plot" operator="contains"><value>Easter</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

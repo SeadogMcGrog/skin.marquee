@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Stories of Freedom</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>juneteenth</value><value>Juneteenth</value><value>black history</value><value>Black History</value><value>freedom</value></rule>
+    <rule field="title" operator="contains"><value>Juneteenth</value><value>Harriet</value><value>12 Years a Slave</value><value>Freedom</value><value>Emancipation</value><value>Amistad</value><value>Glory</value><value>Roots</value></rule>
+    <rule field="plot" operator="contains"><value>Juneteenth</value><value>slavery</value><value>emancipation</value><value>Underground Railroad</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

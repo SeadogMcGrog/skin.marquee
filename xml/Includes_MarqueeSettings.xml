@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+<include name="MqSettingsPanels">
+<control type="grouplist" id="640">
+	<top>133</top>
+	<left>0</left>
+	<right>0</right>
+	<bottom>140</bottom>
+	<onleft>9000</onleft>
+	<onright>9000</onright>
+	<onup>640</onup>
+	<ondown>640</ondown>
+	<visible>Container(9000).HasFocus(5)</visible>
+	<control type="button" id="6400">
+		<label>$LOCALIZE[31700]</label>
+		<label2>$VAR[MqSeasonModeLabelVar]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SelectBool(31700,31701|,31800|mq_force_custom1,31801|mq_force_custom2,31802|mq_force_custom3,31803|mq_force_custom4,31804|mq_force_custom5,31731|mq_force_newyear,31735|mq_force_mlk,31810|mq_force_groundhog,31729|mq_force_valentine,31736|mq_force_presidents,31730|mq_force_stpatrick,31723|mq_force_easter,31737|mq_force_mothers,31724|mq_force_memorial,31725|mq_force_july4,31738|mq_force_juneteenth,31739|mq_force_fathers,31740|mq_force_labor,31741|mq_force_pirate,31742|mq_force_columbus,31702|mq_force_halloween,31743|mq_force_veterans,31703|mq_force_thanksgiving,31704|mq_force_christmas,31705|mq_force_off)</onclick>
+	</control>
+	<control type="button" id="6401">
+		<label>- Active right now</label>
+		<label2>$VAR[MqSeasonNameVar]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>noop</onclick>
+	</control>
+	<control type="radiobutton" id="6402">
+		<label>Seasonal effects (fog, snow, fireworks...)</label>
+		<include>DefaultSettingButton</include>
+		<selected>!Skin.HasSetting(mq_effects_off)</selected>
+		<onclick>Skin.ToggleSetting(mq_effects_off)</onclick>
+	</control>
+	<control type="radiobutton" id="6403">
+		<label>Show built-in seasonal rows</label>
+		<include>DefaultSettingButton</include>
+		<selected>!Skin.HasSetting(mq_no_builtin)</selected>
+		<onclick>Skin.ToggleSetting(mq_no_builtin)</onclick>
+	</control>
+	<control type="radiobutton" id="6404">
+		<label>Seasonal backdrop behind other screens</label>
+		<include>DefaultSettingButton</include>
+		<selected>!Skin.HasSetting(mq_no_global_backdrop)</selected>
+		<onclick>Skin.ToggleSetting(mq_no_global_backdrop)</onclick>
+	</control>
+	<control type="button" id="6405">
+		<label>No-season backgrounds folder</label>
+		<label2>$INFO[Skin.String(mq_bg_default)]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetPath(mq_bg_default)</onclick>
+	</control>
+	<control type="button" id="6406">
+		<label>- Use built-in no-season backgrounds</label>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.Reset(mq_bg_default)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_bg_default))</enable>
+	</control>
+	<control type="button" id="6407">
+		<label>[B]Everyday rows[/B] (shown all year)</label>
+		<label2>Edit</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,everyday,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6410">
+		<label>[COLOR FF8C8C8C]HOLIDAYS[/COLOR]</label>
+		<include>DefaultSettingButton</include>
+		<onclick>noop</onclick>
+	</control>
+	<control type="button" id="6411">
+		<label>New Year's</label>
+		<label2>$VAR[MqHolidayStatus_newyear]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,newyear,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6412">
+		<label>Martin Luther King Jr. Day</label>
+		<label2>$VAR[MqHolidayStatus_mlk]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,mlk,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6413">
+		<label>Groundhog Day</label>
+		<label2>$VAR[MqHolidayStatus_groundhog]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,groundhog,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6414">
+		<label>Valentine's Day</label>
+		<label2>$VAR[MqHolidayStatus_valentine]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,valentine,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6415">
+		<label>Presidents' Day</label>
+		<label2>$VAR[MqHolidayStatus_presidents]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,presidents,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6416">
+		<label>St. Patrick's Day</label>
+		<label2>$VAR[MqHolidayStatus_stpatrick]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,stpatrick,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6417">
+		<label>Easter</label>
+		<label2>$VAR[MqHolidayStatus_easter]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,easter,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6418">
+		<label>Mother's Day</label>
+		<label2>$VAR[MqHolidayStatus_mothers]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,mothers,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6419">
+		<label>Memorial Day</label>
+		<label2>$VAR[MqHolidayStatus_memorial]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,memorial,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6420">
+		<label>Independence Day</label>
+		<label2>$VAR[MqHolidayStatus_july4]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,july4,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6421">
+		<label>Juneteenth</label>
+		<label2>$VAR[MqHolidayStatus_juneteenth]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,juneteenth,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6422">
+		<label>Father's Day</label>
+		<label2>$VAR[MqHolidayStatus_fathers]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,fathers,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6423">
+		<label>Labor Day</label>
+		<label2>$VAR[MqHolidayStatus_labor]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,labor,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6424">
+		<label>Talk Like a Pirate Day</label>
+		<label2>$VAR[MqHolidayStatus_pirate]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,pirate,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6425">
+		<label>Columbus Day</label>
+		<label2>$VAR[MqHolidayStatus_columbus]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,columbus,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6426">
+		<label>Halloween</label>
+		<label2>$VAR[MqHolidayStatus_halloween]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,halloween,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6427">
+		<label>Veterans Day</label>
+		<label2>$VAR[MqHolidayStatus_veterans]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,veterans,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6428">
+		<label>Thanksgiving</label>
+		<label2>$VAR[MqHolidayStatus_thanksgiving]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,thanksgiving,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6429">
+		<label>Christmas</label>
+		<label2>$VAR[MqHolidayStatus_christmas]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,christmas,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6430">
+		<label>[COLOR FF8C8C8C]YOUR OWN HOLIDAYS[/COLOR]</label>
+		<include>DefaultSettingButton</include>
+		<onclick>noop</onclick>
+	</control>
+	<control type="button" id="6431">
+		<label>$VAR[MqCustomSlotLabel_custom1]</label>
+		<label2>$VAR[MqHolidayStatus_custom1]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,custom1,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6432">
+		<label>$VAR[MqCustomSlotLabel_custom2]</label>
+		<label2>$VAR[MqHolidayStatus_custom2]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,custom2,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6433">
+		<label>$VAR[MqCustomSlotLabel_custom3]</label>
+		<label2>$VAR[MqHolidayStatus_custom3]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,custom3,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6434">
+		<label>$VAR[MqCustomSlotLabel_custom4]</label>
+		<label2>$VAR[MqHolidayStatus_custom4]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,custom4,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+	<control type="button" id="6435">
+		<label>$VAR[MqCustomSlotLabel_custom5]</label>
+		<label2>$VAR[MqHolidayStatus_custom5]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>SetProperty(mq_edit,custom5,home)</onclick>
+		<onclick>ActivateWindow(1190)</onclick>
+	</control>
+</control>
+</include>
+<include name="MqMenuAddonSettings">
+	<control type="button" id="27910">
+		<label>Add-on menu item 1</label>
+		<label2>$VAR[MqAddonSettingLabel_1]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetAddon(mq_menuaddon_1,xbmc.python.pluginsource,xbmc.python.script)</onclick>
+	</control>
+	<control type="button" id="27911">
+		<label>- Menu label</label>
+		<label2>$INFO[Skin.String(mq_menuaddon_1_label)]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetString(mq_menuaddon_1_label)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_menuaddon_1))</enable>
+	</control>
+	<control type="radiobutton" id="27912">
+		<label>- Show its contents as a row on the home screen</label>
+		<include>DefaultSettingButton</include>
+		<selected>Skin.HasSetting(mq_menuaddon_1_row)</selected>
+		<onclick>Skin.ToggleSetting(mq_menuaddon_1_row)</onclick>
+	</control>
+	<control type="button" id="27913">
+		<label>- Remove from menu</label>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.Reset(mq_menuaddon_1)</onclick>
+		<onclick>Skin.Reset(mq_menuaddon_1_label)</onclick>
+		<onclick>Skin.Reset(mq_menuaddon_1_row)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_menuaddon_1))</enable>
+	</control>
+	<control type="button" id="27920">
+		<label>Add-on menu item 2</label>
+		<label2>$VAR[MqAddonSettingLabel_2]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetAddon(mq_menuaddon_2,xbmc.python.pluginsource,xbmc.python.script)</onclick>
+	</control>
+	<control type="button" id="27921">
+		<label>- Menu label</label>
+		<label2>$INFO[Skin.String(mq_menuaddon_2_label)]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetString(mq_menuaddon_2_label)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_menuaddon_2))</enable>
+	</control>
+	<control type="radiobutton" id="27922">
+		<label>- Show its contents as a row on the home screen</label>
+		<include>DefaultSettingButton</include>
+		<selected>Skin.HasSetting(mq_menuaddon_2_row)</selected>
+		<onclick>Skin.ToggleSetting(mq_menuaddon_2_row)</onclick>
+	</control>
+	<control type="button" id="27923">
+		<label>- Remove from menu</label>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.Reset(mq_menuaddon_2)</onclick>
+		<onclick>Skin.Reset(mq_menuaddon_2_label)</onclick>
+		<onclick>Skin.Reset(mq_menuaddon_2_row)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_menuaddon_2))</enable>
+	</control>
+	<control type="button" id="27930">
+		<label>Add-on menu item 3</label>
+		<label2>$VAR[MqAddonSettingLabel_3]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetAddon(mq_menuaddon_3,xbmc.python.pluginsource,xbmc.python.script)</onclick>
+	</control>
+	<control type="button" id="27931">
+		<label>- Menu label</label>
+		<label2>$INFO[Skin.String(mq_menuaddon_3_label)]</label2>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.SetString(mq_menuaddon_3_label)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_menuaddon_3))</enable>
+	</control>
+	<control type="radiobutton" id="27932">
+		<label>- Show its contents as a row on the home screen</label>
+		<include>DefaultSettingButton</include>
+		<selected>Skin.HasSetting(mq_menuaddon_3_row)</selected>
+		<onclick>Skin.ToggleSetting(mq_menuaddon_3_row)</onclick>
+	</control>
+	<control type="button" id="27933">
+		<label>- Remove from menu</label>
+		<include>DefaultSettingButton</include>
+		<onclick>Skin.Reset(mq_menuaddon_3)</onclick>
+		<onclick>Skin.Reset(mq_menuaddon_3_label)</onclick>
+		<onclick>Skin.Reset(mq_menuaddon_3_row)</onclick>
+		<enable>!String.IsEmpty(Skin.String(mq_menuaddon_3))</enable>
+	</control>
+</include>
+</includes>

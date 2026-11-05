@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Groundhog Day Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Groundhog</value><value>Time Loop</value><value>Same Day</value><value>Repeat</value><value>Deja Vu</value><value>Again and Again</value></rule>
+    <rule field="plot" operator="contains"><value>Groundhog Day</value><value>time loop</value><value>same day over</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

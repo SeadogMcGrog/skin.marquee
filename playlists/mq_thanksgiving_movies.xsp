@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Thanksgiving Favorites</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>thanksgiving</value><value>Thanksgiving</value></rule>
+    <rule field="title" operator="contains"><value>Thanksgiving</value><value>Turkey</value><value>Planes, Trains</value></rule>
+    <rule field="plot" operator="contains"><value>Thanksgiving</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

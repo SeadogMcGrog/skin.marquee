@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Movies for Mom</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>mom</value><value>mothers day</value><value>Mother's Day</value><value>mother</value></rule>
+    <rule field="title" operator="contains"><value>Mother</value><value>Mamma Mia</value><value>Mommy</value><value>Steel Magnolias</value><value>Little Women</value></rule>
+    <rule field="plot" operator="contains"><value>Mother's Day</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

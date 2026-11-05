@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Luck of the Irish</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>irish</value><value>Irish</value><value>st patricks day</value><value>St. Patrick's Day</value><value>ireland</value><value>Ireland</value></rule>
+    <rule field="title" operator="contains"><value>Irish</value><value>Ireland</value><value>Dublin</value><value>Leprechaun</value><value>Shamrock</value><value>Celtic</value><value>Luck of the</value><value>Banshees</value></rule>
+    <rule field="plot" operator="contains"><value>Ireland</value><value>St. Patrick</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Holiday Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Christmas</value><value>Xmas</value><value>Santa</value><value>Holiday</value><value>Noel</value><value>Mistletoe</value></rule>
+    <rule field="plot" operator="contains"><value>Christmas</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

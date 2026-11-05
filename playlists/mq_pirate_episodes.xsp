@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Pirate Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Pirate</value><value>Treasure</value><value>Talk Like a Pirate</value><value>Ahoy</value><value>Buccaneer</value></rule>
+    <rule field="plot" operator="contains"><value>pirate</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

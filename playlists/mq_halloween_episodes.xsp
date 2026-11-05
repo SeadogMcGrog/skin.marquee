@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Halloween Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Halloween</value><value>Treehouse of Horror</value><value>Trick or Treat</value><value>Haunted</value></rule>
+    <rule field="plot" operator="contains"><value>Halloween</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>
