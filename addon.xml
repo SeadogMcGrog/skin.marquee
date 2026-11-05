@@ -25,6 +25,7 @@ On CoreELEC, the CoreELEC settings appear in the Settings menu.</description>
 		<disclaimer lang="en_GB">Based on Estuary by phil65 and Team Kodi.</disclaimer>
 		<platform>all</platform>
 		<license>GPL-2.0-or-later; CC-BY-SA-4.0 (artwork)</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=389707</forum>
 		<source>https://github.com/SeadogMcGrog/skin.marquee</source>
 		<website>https://github.com/SeadogMcGrog/skin.marquee</website>
 		<news>First release.</news>

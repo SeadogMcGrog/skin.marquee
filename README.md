@@ -12,6 +12,8 @@ Marquee has a menu along the top, a large hero area for the focused title, and r
 | ![Thanksgiving](resources/screenshot-05.jpg) | ![St. Patrick's Day](resources/screenshot-06.jpg) |
 | ![Seasons settings](resources/screenshot-07.jpg) | ![Holiday settings](resources/screenshot-08.jpg) |
 
+Support and feedback: [Kodi forum thread](https://forum.kodi.tv/showthread.php?tid=389707)
+
 ## Install
 
 1. Download the latest `skin.marquee-x.y.z.zip` from [Releases](https://github.com/SeadogMcGrog/skin.marquee/releases). Don't use GitHub's **Code → Download ZIP**: its folder is named `skin.marquee-main`, and Kodi rejects that zip.
