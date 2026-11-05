@@ -14,7 +14,7 @@ Marquee has a menu along the top, a large hero area for the focused title, and r
 
 ## Install
 
-1. Download the latest zip from [Releases](https://github.com/SeadogMcGrog/skin.marquee/releases), or click **Code → Download ZIP** on this page.
+1. Download the latest `skin.marquee-x.y.z.zip` from [Releases](https://github.com/SeadogMcGrog/skin.marquee/releases). Don't use GitHub's **Code → Download ZIP**: its folder is named `skin.marquee-main`, and Kodi rejects that zip.
 2. In Kodi, go to **Settings → Add-ons → Install from zip file** and pick the zip. Turn on *Unknown sources* if Kodi asks.
 3. Go to **Settings → Interface → Skin** and choose **Marquee**.
 
