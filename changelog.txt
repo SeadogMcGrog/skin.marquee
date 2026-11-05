@@ -1,45 +1,7 @@
-[B]1.0.11[/B]
-- Ready for the official Kodi repository: new description, source link, licence notice and screenshots.
-- Removed leftovers from Estuary: its colour themes, unused font licences and Estuary names in the translation files.
-
-[B]1.0.10[/B]
-- New holiday: Groundhog Day (Jan 27 - Feb 2). It has a snowy dawn backdrop, falling snow, a bobbing groundhog icon and its own rows: Groundhog Day, Stuck in a Time Loop, Bill Murray Favorites and Groundhog Day Episodes. On Feb 2 it reads "It's Groundhog Day. Again."
-
-[B]1.0.9[/B]
-- Skin settings are shorter: a new Seasons category lists every holiday. Select one to edit it on its own page.
-- Every holiday can be customised: start and end dates, greeting, small label, greeting font and colour, highlight colour, menu icon and its animation, backgrounds folder, effect, and home-screen rows. Each holiday has a "Reset to defaults" button and an on/off switch.
-- Add up to 5 holidays of your own with all the same options. If one overlaps a built-in holiday, yours wins.
-- Effects can be swapped per holiday. Graveyard fog is Halloween's default effect.
-- Unused add-on menu slots no longer log plugin errors.
-
-[B]1.0.8[/B]
-- Talk Like a Pirate Day now names itself above the "Ahoy, Matey!" greeting.
-
-[B]1.0.7[/B]
-- New holidays: Martin Luther King Jr. Day, Presidents' Day, Mother's Day, Juneteenth, Father's Day, Labor Day, Talk Like a Pirate Day, Columbus Day and Veterans Day.
-- One calendar now picks the theme for every day from 2024 to 2060: when holidays overlap, the one coming up next wins.
-
-[B]1.0.6[/B]
-- New seasons: New Year's (Dec 26 - Jan 1, with a live countdown, a ball drop over the last minute and midnight fireworks), Valentine's Day (Feb 1-14, rising hearts) and St. Patrick's Day (Mar 1-17, falling shamrocks).
-- Seasons are listed in calendar order in skin settings.
-
-[B]1.0.5[/B]
-- July theme now says "Independence Day" throughout.
-
-[B]1.0.4[/B]
-- New seasons: Easter (the month Easter falls in), Memorial Day (the week up to and including it) and Independence Day (all of July), each with colours, greeting, countdown, backdrop and built-in rows.
-- Fireworks for Independence Day and spring petals for Easter.
-- Skin name removed from the home screen.
-
-[B]1.0.3[/B]
-- CoreELEC additions from CoreELEC's own Estuary: CoreELEC tile in Settings, "Restart Kodi" and "Reboot from eMMC/NAND" in the power menu, player process-info button in the video OSD, and CoreELEC's system info layout.
-
-[B]1.0.2[/B]
-- Up to three of your own add-ons can be added to the top menu (Skin settings > Main menu items).
-- Slightly smaller menu text so more items fit.
-
-[B]1.0.1[/B]
-- Seasonal backgrounds no longer pan.
-
 [B]1.0.0[/B]
-- First release of Marquee (based on Estuary for Kodi 21).
+- First release.
+- 19 date-based holidays, each with its own greeting, colours, backdrop, countdown, effect and home-screen rows: New Year's, Martin Luther King Jr. Day, Groundhog Day, Valentine's Day, Presidents' Day, St. Patrick's Day, Easter, Mother's Day, Memorial Day, Juneteenth, Father's Day, Independence Day, Labor Day, Talk Like a Pirate Day, Columbus Day, Halloween, Veterans Day, Thanksgiving and Christmas.
+- Effects include rolling graveyard fog, falling snow, leaves and shamrocks, rising hearts, petals, confetti and fireworks, plus a New Year's Eve countdown and ball drop.
+- Seasons settings page: change any holiday's dates, look, effect and rows, or add up to five holidays of your own.
+- Up to three add-ons can be added to the top menu.
+- CoreELEC settings, power-menu items and system info on CoreELEC.
