@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>The Story of Jesus</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>faith</value><value>Faith</value><value>christian</value><value>Christian</value><value>bible</value><value>Bible</value></rule>
+    <rule field="title" operator="contains"><value>Jesus</value><value>Passion of the Christ</value><value>The Passion</value><value>Risen</value><value>Resurrection</value><value>King of Kings</value><value>Son of God</value><value>Ben-Hur</value><value>Ten Commandments</value><value>Prince of Egypt</value><value>Greatest Story Ever Told</value><value>The Chosen</value></rule>
+    <rule field="plot" operator="contains"><value>Jesus</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Civil Rights Stories</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>civil rights</value><value>Civil Rights</value><value>black history</value><value>Black History</value><value>mlk</value></rule>
+    <rule field="title" operator="contains"><value>Selma</value><value>Martin Luther King</value><value>Hidden Figures</value><value>Harriet</value><value>Malcolm X</value><value>The Help</value><value>Mississippi Burning</value><value>Glory Road</value><value>Remember the Titans</value><value>Just Mercy</value></rule>
+    <rule field="plot" operator="contains"><value>civil rights</value><value>Civil Rights</value><value>Martin Luther King</value><value>segregation</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

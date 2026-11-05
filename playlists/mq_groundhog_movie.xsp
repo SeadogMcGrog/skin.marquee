@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Groundhog Day</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Groundhog Day</value></rule>
+    <rule field="tag" operator="is"><value>groundhog</value><value>Groundhog</value><value>groundhog day</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

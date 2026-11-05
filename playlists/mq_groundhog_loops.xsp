@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Stuck in a Time Loop</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>time loop</value><value>Time Loop</value><value>groundhog</value></rule>
+    <rule field="title" operator="contains"><value>Groundhog Day</value><value>Palm Springs</value><value>Happy Death Day</value><value>Edge of Tomorrow</value><value>Source Code</value><value>Before I Fall</value><value>Map of Tiny Perfect Things</value><value>Boss Level</value><value>Naked</value><value>12:01</value><value>Triangle</value><value>Run Lola Run</value><value>About Time</value><value>Repeaters</value></rule>
+    <rule field="plot" operator="contains"><value>time loop</value><value>same day over</value><value>relive the same day</value><value>reliving the same day</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

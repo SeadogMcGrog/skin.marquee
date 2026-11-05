@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Spooky Season</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>halloween</value><value>Halloween</value></rule>
+    <rule field="title" operator="contains"><value>Halloween</value><value>Hocus Pocus</value><value>Trick 'r Treat</value><value>Pumpkin</value><value>Haunted</value><value>Ghost</value><value>Witch</value><value>Vampire</value><value>Zombie</value><value>Monster</value></rule>
+    <rule field="plot" operator="contains"><value>Halloween</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

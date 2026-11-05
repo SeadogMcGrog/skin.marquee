@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Christmas Movies</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>christmas</value><value>Christmas</value><value>xmas</value></rule>
+    <rule field="title" operator="contains"><value>Christmas</value><value>Xmas</value><value>Santa</value><value>Grinch</value><value>Elf</value><value>Home Alone</value><value>Polar Express</value><value>Noel</value><value>Holiday</value><value>Scrooge</value><value>Krampus</value></rule>
+    <rule field="plot" operator="contains"><value>Christmas</value><value>Santa Claus</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

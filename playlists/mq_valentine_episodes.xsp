@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Valentine's Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Valentine</value><value>Cupid</value><value>Be Mine</value><value>Love Day</value></rule>
+    <rule field="plot" operator="contains"><value>Valentine</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Working-Class Heroes</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>union</value><value>workers</value><value>blue collar</value><value>labor</value></rule>
+    <rule field="title" operator="contains"><value>Norma Rae</value><value>Factory</value><value>Working Girl</value><value>9 to 5</value><value>Office Space</value><value>Matewan</value><value>On the Waterfront</value><value>Erin Brockovich</value><value>Silkwood</value><value>Kinky Boots</value></rule>
+    <rule field="plot" operator="contains"><value>labor union</value><value>workers</value><value>factory</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

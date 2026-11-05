@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Summer's Last Hurrah</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>summer</value><value>Summer</value><value>labor day</value><value>Labor Day</value></rule>
+    <rule field="title" operator="contains"><value>Summer</value><value>Beach</value><value>Vacation</value><value>Road Trip</value><value>Barbecue</value><value>Camp Nowhere</value><value>Wet Hot</value></rule>
+    <rule field="plot" operator="contains"><value>Labor Day</value><value>summer vacation</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

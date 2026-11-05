@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Explorers &amp; the Open Sea</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>explorer</value><value>exploration</value><value>ocean</value><value>sea</value><value>sailing</value></rule>
+    <rule field="title" operator="contains"><value>Columbus</value><value>1492</value><value>Explorer</value><value>Voyage</value><value>Ocean</value><value>Expedition</value><value>Shipwreck</value><value>Master and Commander</value><value>Mutiny</value><value>Kon-Tiki</value><value>Endurance</value><value>Moana</value></rule>
+    <rule field="plot" operator="contains"><value>voyage</value><value>explorer</value><value>expedition</value><value>the New World</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

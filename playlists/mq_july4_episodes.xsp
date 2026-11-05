@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Independence Day Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Fourth of July</value><value>4th of July</value><value>Independence Day</value><value>July 4</value><value>Fireworks</value><value>Firecracker</value></rule>
+    <rule field="plot" operator="contains"><value>Fourth of July</value><value>4th of July</value><value>fireworks</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

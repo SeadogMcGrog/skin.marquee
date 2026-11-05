@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Presidents &amp; Politics</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>president</value><value>presidents</value><value>politics</value><value>Politics</value></rule>
+    <rule field="title" operator="contains"><value>President</value><value>White House</value><value>Lincoln</value><value>Washington</value><value>Kennedy</value><value>JFK</value><value>Nixon</value><value>Air Force One</value><value>Truman</value><value>Jefferson</value><value>Mr. Smith Goes</value></rule>
+    <rule field="plot" operator="contains"><value>President of the United States</value><value>the White House</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Father's Day Episodes</name>
+    <match>one</match>
+    <rule field="title" operator="contains"><value>Father's Day</value><value>Father</value></rule>
+    <rule field="plot" operator="contains"><value>Father's Day</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

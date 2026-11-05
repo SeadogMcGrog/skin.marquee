@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.marquee" version="1.0.11" name="Marquee" provider-name="David Constance">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A streaming-style skin that changes with the holidays.</summary>
+		<description lang="en_GB">Marquee is a streaming-style skin built on Estuary. It has a menu along the top, a large hero area for the focused title, and rows of artwork underneath.
+
+The theme follows the calendar. It covers 19 holidays, from New Year&apos;s and Groundhog Day to Halloween, Thanksgiving and Christmas. Each holiday has its own greeting, colours, backdrop, countdown and effect, such as graveyard fog, falling snow, leaves, hearts or fireworks. Each one also has rows of matching movies and shows from your library.
+
+You can change any holiday&apos;s dates, look and rows. You can also add up to five holidays of your own, such as a birthday or an anniversary. Your own backgrounds can be dropped into a folder for each holiday.
+
+On CoreELEC, the CoreELEC settings appear in the Settings menu.</description>
+		<disclaimer lang="en_GB">Based on Estuary by phil65 and Team Kodi.</disclaimer>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later; CC-BY-SA-4.0 (artwork)</license>
+		<source>https://github.com/SeadogMcGrog/skin.marquee</source>
+		<website>https://github.com/SeadogMcGrog/skin.marquee</website>
+		<news>1.0.11: Prepared for the official Kodi repository. 1.0.10: New holiday, Groundhog Day. 1.0.9: Seasons settings page, every holiday can be customised, and up to five holidays of your own.</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>

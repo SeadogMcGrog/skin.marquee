@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>New Year's Eve Movies</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>new year</value><value>New Year</value><value>new years eve</value><value>New Year's Eve</value></rule>
+    <rule field="title" operator="contains"><value>New Year</value><value>Midnight</value><value>Countdown</value><value>Auld Lang Syne</value></rule>
+    <rule field="plot" operator="contains"><value>New Year's Eve</value><value>New Year's Day</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

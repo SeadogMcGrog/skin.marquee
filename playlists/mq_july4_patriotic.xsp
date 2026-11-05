@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Patriotic Picks</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>patriotic</value><value>Patriotic</value><value>4th of july</value><value>4th of July</value><value>fourth of july</value><value>independence day</value><value>Independence Day</value></rule>
+    <rule field="title" operator="contains"><value>America</value><value>Independence</value><value>Patriot</value><value>Liberty</value><value>Freedom</value><value>Yankee Doodle</value><value>1776</value><value>Lincoln</value><value>Glory</value><value>Fourth of July</value><value>4th of July</value><value>Uncle Sam</value><value>Star-Spangled</value><value>Old Glory</value></rule>
+    <rule field="plot" operator="contains"><value>Fourth of July</value><value>4th of July</value><value>Independence Day</value><value>Founding Fathers</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

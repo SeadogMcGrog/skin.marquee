@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Pirate Adventures</name>
+    <match>one</match>
+    <rule field="tag" operator="is"><value>pirate</value><value>Pirate</value><value>pirates</value><value>Pirates</value></rule>
+    <rule field="title" operator="contains"><value>Pirate</value><value>Treasure</value><value>Buccaneer</value><value>Captain Blood</value><value>Hook</value><value>Sinbad</value><value>Black Sails</value><value>Peter Pan</value><value>Goonies</value><value>Cutthroat Island</value><value>Swashbuckler</value><value>Blackbeard</value><value>Captain Hook</value></rule>
+    <rule field="plot" operator="contains"><value>pirate</value><value>pirates</value></rule>
+    <limit>60</limit>
+    <order direction="ascending">random</order>
+</smartplaylist>

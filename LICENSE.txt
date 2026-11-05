@@ -1,0 +1,17 @@
+Marquee
+Copyright (C) 2026 David Constance (SeadogMcGrog)
+
+Marquee is a derivative of Estuary by phil65 (Team Kodi).
+
+Code (XML, Python tools) is licensed under the
+GNU General Public License (GPL), Version 2.0 or later.
+You can find the license details here: <https://www.gnu.org/licenses/gpl-2.0>.
+
+Artwork is licensed under a
+Creative Commons Attribution-ShareAlike 4.0 International License.
+You can find the license details here: <http://creativecommons.org/licenses/by-sa/4.0/>.
+This includes the original Estuary artwork and the new Marquee artwork
+(seasonal textures, icons and placeholder backdrops).
+
+Bundled fonts keep their own licences: see fonts/marquee_fonts_license.txt,
+fonts/noto_license.txt and fonts/roboto_license.txt.
