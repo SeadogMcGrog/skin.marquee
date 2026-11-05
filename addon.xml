@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.marquee" version="1.0.11" name="Marquee" provider-name="David Constance">
+<addon id="skin.marquee" version="1.0.0" name="Marquee" provider-name="David Constance">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
@@ -27,7 +27,7 @@ On CoreELEC, the CoreELEC settings appear in the Settings menu.</description>
 		<license>GPL-2.0-or-later; CC-BY-SA-4.0 (artwork)</license>
 		<source>https://github.com/SeadogMcGrog/skin.marquee</source>
 		<website>https://github.com/SeadogMcGrog/skin.marquee</website>
-		<news>1.0.11: Prepared for the official Kodi repository. 1.0.10: New holiday, Groundhog Day. 1.0.9: Seasons settings page, every holiday can be customised, and up to five holidays of your own.</news>
+		<news>First release.</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
