@@ -977,6 +977,12 @@ SEASON_INDEX = {"halloween": 1, "thanksgiving": 2, "christmas": 3, "everyday": 4
                 "custom1": 20, "custom2": 21, "custom3": 22, "custom4": 23, "custom5": 24, "groundhog": 25}
 
 
+# Seasonal row ids. Kept clear of every id the home window pulls in from includes: Estuary's DefaultBackground
+# has controls 31111 and 32111, and a clash there breaks the up-navigation chain through the hidden rows
+# (Kodi resolves the id to the background group, which has no <onup>, so focus never reaches the menu).
+SEASON_ROW_BASE = 55000
+
+
 def seasonal_rows(back_to):
     out = []
     for s in SLOT_SEASONS:
@@ -991,14 +997,14 @@ def seasonal_rows(back_to):
             if season_cond:
                 base = season_cond + " + " + base
             header = "$VAR[MqSlotHeader_%s_%d]" % (k, n)
-            out.append(row(30000 + si * 100 + n * 10 + 1, "poster", header, path, "videos",
+            out.append(row(SEASON_ROW_BASE + si * 100 + n * 10 + 1, "poster", header, path, "videos",
                            base + " + !Skin.HasSetting(%s_landscape) + !Skin.HasSetting(%s_square)" % (p, p), limit=40, back_to=back_to))
-            out.append(row(30000 + si * 100 + n * 10 + 2, "landscape", header, path, "videos",
+            out.append(row(SEASON_ROW_BASE + si * 100 + n * 10 + 2, "landscape", header, path, "videos",
                            base + " + Skin.HasSetting(%s_landscape)" % p, limit=40, back_to=back_to))
-            out.append(row(30000 + si * 100 + n * 10 + 3, "square", header, path, "music",
+            out.append(row(SEASON_ROW_BASE + si * 100 + n * 10 + 3, "square", header, path, "music",
                            base + " + Skin.HasSetting(%s_square)" % p, limit=40, back_to=back_to))
         for i, (kind, header, path, target) in enumerate(BUILTIN.get(k, [])):
-            out.append(row(30000 + si * 100 + 80 + i, kind, header, path, target,
+            out.append(row(SEASON_ROW_BASE + si * 100 + 80 + i, kind, header, path, target,
                            season_cond + " + !Skin.HasSetting(mq_no_builtin) + !Skin.HasSetting(mq_%s_nobuiltin)" % k, limit=40, back_to=back_to))
     return out
 
@@ -1429,8 +1435,8 @@ def home_xml():
 				<orientation>horizontal</orientation>
 				<itemgap>6</itemgap>
 				<scrolltime tween="cubic" easing="out">300</scrolltime>
-				<onright>700</onright>
-				<onleft>700</onleft>
+				<onright>701</onright>
+				<onleft>703</onleft>
 				<onup>noop</onup>
 {menu}
 			</control>
@@ -1439,8 +1445,8 @@ def home_xml():
 				<orientation>horizontal</orientation>
 				<align>right</align>
 				<itemgap>8</itemgap>
-				<onleft>9100</onleft>
-				<onright>9100</onright>
+				<onleft>{menu_last}</onleft>
+				<onright>{menu_first}</onright>
 				<ondown>SetFocus($INFO[Window(home).Property(mq_rows_id)])</ondown>
 				<include content="MqIconButton"><param name="id" value="701"/><param name="icon" value="icons/search.png"/><param name="onclick" value="ActivateWindow(1107)"/></include>
 				<include content="MqIconButton"><param name="id" value="702"/><param name="icon" value="icons/settings.png"/><param name="onclick" value="ActivateWindow(settings)"/></include>
@@ -1459,7 +1465,8 @@ def home_xml():
 		</control>
 	</controls>
 </window>
-""".format(rows="\n".join(rows_xml), menu=menu, greet=greet_labels, rtop=ROWS_TOP, rh=2 * SLOT + ROW_GAP, inits=inits)
+""".format(rows="\n".join(rows_xml), menu=menu, greet=greet_labels, rtop=ROWS_TOP, rh=2 * SLOT + ROW_GAP, inits=inits,
+               menu_first=min(MENU_IDS.values()), menu_last=max(MENU_IDS.values()))
 
 
 def extra_includes():
