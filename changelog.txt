@@ -1,3 +1,7 @@
+[B]1.0.1[/B]
+- Fixed: pressing up from the home screen rows now goes back to the top menu.
+- Fixed: moving right from the top menu always reaches search, then settings, then power, and moving past either end wraps around.
+
 [B]1.0.0[/B]
 - First release.
 - 19 date-based holidays, each with its own greeting, colours, backdrop, countdown, effect and home-screen rows: New Year's, Martin Luther King Jr. Day, Groundhog Day, Valentine's Day, Presidents' Day, St. Patrick's Day, Easter, Mother's Day, Memorial Day, Juneteenth, Father's Day, Independence Day, Labor Day, Talk Like a Pirate Day, Columbus Day, Halloween, Veterans Day, Thanksgiving and Christmas.
