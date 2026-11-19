@@ -1,3 +1,6 @@
+[B]1.0.2[/B]
+- Updated the author name.
+
 [B]1.0.1[/B]
 - Fixed: pressing up from the home screen rows now goes back to the top menu.
 - Fixed: moving right from the top menu always reaches search, then settings, then power, and moving past either end wraps around.
